@@ -126,14 +126,11 @@ for T in (Float32, Float64)
     #Edge cases
     @test isinf(xlog(zero(T)))
     @test isnan(xlog(convert(T,NaN)))
-
-
     @test isinf(xlog1p(-one(T)))
     @test isnan(xlog1p(convert(T,NaN)))
+	@test_throws DomainError xlog(-one(T))
+	@test_throws DomainError xlog1p(convert(T,-2.0))
 
-	#Broken Tests
-	#@test_throws DomainError xlog(-one(T))
-	#@test_throws DomainError log1p(convert(T,-2.0))
 end
 
 
