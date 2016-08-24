@@ -1,5 +1,14 @@
 module SLEEF
 
+export xsin,  xcos,  xtan,  xasin,  xacos,  xatan,  xlog,
+	xexp,  xsinh,  xcosh,  xtanh,  xasinh,  xacosh,  xatanh,
+	xcbrt,  xexp2,  xexp10,  xexpm1,  xlog10,  xlog1p,
+	xsin_u1, xcos_u1,  xtan_u1,  xasin_u1,
+	xacos_u1,  xatan_u1,  xlog_u1,  xcbrt_u1,
+	xsincos, xsincos_u1, xatan2, xatan2_u1, xpow,
+	xldexp, xilogb
+
+
 if isfile(joinpath(dirname(@__FILE__),"..","deps","deps.jl"))
     include("../deps/deps.jl")
 else
@@ -14,19 +23,17 @@ end
 
 typealias VDouble NTuple{2, VecElement{Float64}} #SSE2 __m128d
 Base.convert(::Type{VDouble}, x::Float64) = VDouble((x,0.0))
-Base.convert(::Type{Float64}, x::VDouble) = x[1].value
+Base.convert(::Type{Float64}, x::VDouble) = first(x).value
 
 typealias VFloat NTuple{4, VecElement{Float32}} #SSE2 __m128
 Base.convert(::Type{VFloat}, x::Float32) = VFloat((x, 0f0, 0f0, 0f0))
-Base.convert(::Type{Float32}, x::VFloat) = x[1].value
+Base.convert(::Type{Float32}, x::VFloat) = first(x).value
 
 typealias VInt NTuple{2, VecElement{Int32}} #SSE2 __m128i
 Base.convert(::Type{VInt}, x::Int32) = VInt((x, zero(Int32), zero(Int32),zero(Int32)))
-Base.convert(::Type{Int32}, x::VInt) = x[1].value
+Base.convert(::Type{Int32}, x::VInt) = first(x).value
 
-typealias VInt2 NTuple{2, VecElement{Int32}} #SSE2 __m128i
-Base.convert(::Type{VInt2}, x::Int32) = VInt2((x, zero(Int32), zero(Int32),zero(Int32)))
-Base.convert(::Type{Int32}, x::VInt2) = x[1].value
+typealias VInt2 VInt #Not true in all Architectures but true for SSE2
 
 
 
@@ -113,7 +120,7 @@ for fname in [:xsincos, :xsincos_u1]
 	eval(declare_1f_2f_func(fname))
 end
 
-for fname in [:xatan2, :xpow, :xatan_u1]
+for fname in [:xatan2, :xpow, :xatan2_u1]
 	eval(declare_2f_1f_func(fname))
 end
 
@@ -140,5 +147,4 @@ end
 ##############################
 
 
-
-end # module
+end # SLEEF Module
