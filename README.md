@@ -27,3 +27,8 @@ Functions without this varientent form (eg `xexp`) are already accurace to withi
 `xilogb` is only available with `Float64`, idk why, its just not defined in SLEEF for single precision floats.
 
 
+# See Also
+
+ - Fine work happening at [Libm.jl](https://github.com/JuliaMath/Libm.jl), where a pure julia sleef port in in progress
+ - [SLEEF](https://github.com/shibatch/sleef)
+ - [Future of OpenLibm in julia (Julia Issue #18102)](https://github.com/JuliaLang/julia/issues/18102)
