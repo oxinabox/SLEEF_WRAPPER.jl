@@ -1,15 +1,17 @@
-function unix_findcpuflag(flags, fallback::String)
-	cpuinfo = readstring(`cat /proc/cpuinfo`);
-	cpu_flags = split(match(r"flags\t\t: (.*)", cpuinfo).captures[1])
-	for flag in flags
-		if flag in cpu_flags
-			return flag
-		end
+function cpu_flags()
+	if is_linux()
+		cpuinfo = readstring(`cat /proc/cpuinfo`);
+		cpu_flag_string = match(r"flags\t\t: (.*)", cpuinfo).captures[1]
+	elseif is_apple()
+		sysinfo = readstring(`sysctl -a`);
+		cpu_flag_string = match(r"machdep.cpu.features: (.*)", cpuinfo).captures[1]
+	else
+		@assert is_windows()
+		warn("CPU Feature detection does not work on windows.")
+		cpu_flag_string = ""
 	end
-	return fallback
+	split(lowercase(cpu_flag_string))
 end
-
-
 """Returns the earliest flag in the list of `flags`, that the cpu supports.
 If it supports none of them, returns `fallback`.
 If `envar` is set then that will override detecting the flags,
@@ -26,12 +28,17 @@ function find_cpuflag(flags, fallback::String, envar)
 	end
 
 	### Detect
-	if is_unix()
-		unix_findcpuflag(flags, fallback)
-	else
-		#Windows
-		@assert is_windows()
-		warn("Architecture Detection not supported on windows.\nDefaulting to \"$fallback\".\nPlease set enviroment variable `$envar`, to on of $flaglist\" or \"$fallback\"")
+	cpu_flags = cpu_flags()
+	if length(cpu_flags)==0
+		warn("Architecture Detection Failed.\nDefaulting to \"$fallback\".\nPlease set enviroment variable `$envar`, to one of $flaglist\" or \"$fallback\"")
 		return fallback
 	end
+
+	#It worked
+	for flag in flags
+		if flag in cpu_flags
+			return flag
+		end
+	end
+	return fallback
 end
