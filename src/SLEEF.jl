@@ -16,39 +16,7 @@ else
 end
 
 
-# Types
-# ccall will call the Conversions we have defined
-# TODO: I am dubious about all of this; check it all.
-# This is archetecture dependent.
-
-typealias VDouble NTuple{2, VecElement{Float64}} #SSE2 __m128d
-Base.convert(::Type{VDouble}, x::Float64) = VDouble((x,0.0))
-Base.convert(::Type{Float64}, x::VDouble) = first(x).value
-
-typealias VFloat NTuple{4, VecElement{Float32}} #SSE2 __m128
-Base.convert(::Type{VFloat}, x::Float32) = VFloat((x, 0f0, 0f0, 0f0))
-Base.convert(::Type{Float32}, x::VFloat) = first(x).value
-
-typealias VInt NTuple{2, VecElement{Int32}} #SSE2 __m128i
-Base.convert(::Type{VInt}, x::Int32) = VInt((x, zero(Int32), zero(Int32),zero(Int32)))
-Base.convert(::Type{Int32}, x::VInt) = first(x).value
-
-typealias VInt2 VInt #Not true in all Architectures but true for SSE2
-
-
-
-immutable VDouble2
-	x::VDouble
-	y::VDouble
-end
-Base.convert(::Type{Tuple{Float64,Float64}}, d::VDouble2) = (convert(Float64, d.x), convert(Float64, d.y))
-
-immutable VFloat2
-	x::VFloat
-	y::VFloat
-end
-Base.convert(::Type{Tuple{Float32,Float32}}, d::VFloat2) = (convert(Float32, d.x), convert(Float32, d.y))
-
+include("types.jl")
 
 
 ##########
