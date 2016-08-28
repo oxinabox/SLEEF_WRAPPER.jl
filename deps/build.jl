@@ -12,8 +12,8 @@ sleefsrcdir = joinpath(srcdir(sleef), "sleef-2.80/simd")
 const CCOPTS = split("-O -Wall -Wno-unused -Wno-attributes -lm")
 const ARCHOPTS = ["-DENABLE_SSE2", "-msse2"]
 
-#HACK we call it `sleef.so` even if it is a Mac dylib
-if true #is_apple()
+
+if is_apple()
 	const LIBBUILTOPTS = `-dynamiclib`
 	const LIBFN = "sleef.dynlib"
 elseif is_unix()
@@ -38,7 +38,7 @@ provides(SimpleBuild,
 					CCompile("sleefsimdsp.c", "sleefsimdsp.o", [CCOPTS; "-c"; "-fPIC"; ARCHOPTS],String[])
 					`gcc $LIBBUILTOPTS -o $LIBFN sleefsimdsp.o sleefsimddp.o`
 					#CCompile("sleefsimddp.o sleefsimdsp.o",LIBFN, [LIBBUILTOPTS]], String[] )
-					`cp $LIBFN $prefix/lib/sleef.so`
+					`cp $LIBFN $(joinpath(prefix,"lib",LIBFN))`
                 end
 				)
         end
