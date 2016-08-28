@@ -28,15 +28,15 @@ function find_cpuflag(flags, fallback::String, envar)
 	end
 
 	### Detect
-	cpu_flags = cpu_flags()
-	if length(cpu_flags)==0
+	available_cpu_flags = cpu_flags()
+	if length(available_cpu_flags)==0
 		warn("Architecture Detection Failed.\nDefaulting to \"$fallback\".\nPlease set enviroment variable `$envar`, to one of $flaglist\" or \"$fallback\"")
 		return fallback
 	end
 
 	#It worked
 	for flag in flags
-		if flag in cpu_flags
+		if flag in available_cpu_flags
 			return flag
 		end
 	end
