@@ -21,7 +21,9 @@ Right now the following instruction sets are supported:
  - `avx2`
  - `fma4`
  - and the fall back to `purec`
+
 ARM `neon` is not currently supported.
+
 During the build process, we attempt to detect your processor's support for the various SIMD instruction sets, and enable the most powerful it supports. There may be some bugs with this, I am no SIMD expert. Please make a bug report with any issues found.
 You can override the SIMD instruction set selection by setting the enviroment variable `JLSLEEF_ARCH` to one of the instruction sets (or `purec` above), and rebuilding. Either by running `deps/rebuild.jl` or by reinstalling the package. This enviroment variable only needs to be set during the build process.
 
