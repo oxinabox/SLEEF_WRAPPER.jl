@@ -15,7 +15,7 @@ const ARCHOPTS = ["-DENABLE_SSE2", "-msse2"]
 
 if is_apple()
 	const LIBBUILTOPTS = `-dynamiclib`
-	const LIBFN = "sleef.dynlib"
+	const LIBFN = "sleef.dylib"
 elseif is_unix()
 	const LIBBUILTOPTS = `-shared`
 	const LIBFN = "sleef.so"
