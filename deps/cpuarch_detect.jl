@@ -16,12 +16,12 @@ If `envar` is set then that will override detecting the flags,
 and the envar value will just be returned (if valid).
 """
 function find_cpuflag(flags, fallback::String, envar)
-	archlist = join(["\"$a\"" for a in arches], ", ")
-	if envar in ENV
+	flaglist = join(["\"$a\"" for a in flags], ", ")
+	if haskey(ENV, envar)
 		if ENV[envar] in flags || ENV[envar] == fallback
 			return ENV[envar]
 		else
-			error("Enviroment variable `$envar` was set to \"$(ENV[envar])\":\nvalid values are $archlist" or \"$fallback\"\n. Delete the enviroment variable to use automatic detection.")
+			error("Enviroment variable `$envar` was set to \"$(ENV[envar])\":\nvalid values are \"$flaglist\" or \"$fallback\"\n. Delete the enviroment variable to use automatic detection.")
 		end
 	end
 
@@ -31,7 +31,7 @@ function find_cpuflag(flags, fallback::String, envar)
 	else
 		#Windows
 		@assert is_windows()
-		warn("Architecture Detection not supported on windows.\nDefaulting to \"$fallback\".\nPlease set enviroment variable `$envar`, to on of $archlist" or \"$fallback\"")
+		warn("Architecture Detection not supported on windows.\nDefaulting to \"$fallback\".\nPlease set enviroment variable `$envar`, to on of $flaglist\" or \"$fallback\"")
 		return fallback
 	end
 end
