@@ -13,7 +13,7 @@ const CCOPTS = split("-O -Wall -Wno-unused -Wno-attributes -lm")
 const ARCHOPTS = ["-DENABLE_SSE2", "-msse2"]
 
 #HACK we call it `sleef.so` even if it is a Mac dylib
-const LIBBUILTOPTS = is_apple() ? "-dynamiclib` : `-shared`
+const LIBBUILTOPTS = is_apple() ? `-dynamiclib` : `-shared`
 
 provides(SimpleBuild,
     (@build_steps begin
