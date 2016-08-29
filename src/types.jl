@@ -28,7 +28,7 @@ Base.convert(::Type{Float32}, x::__m128) = first(x).value
 
 ##Int32
 typealias __m256i NTuple{8, VecElement{Int32}}
-Base.convert(::Type{__m256i}, x::Float32) = __m256i(vinit8(x))
+Base.convert(::Type{__m256i}, x::Int32) = __m256i(vinit8(x))
 Base.convert(::Type{Int32}, x::__m256i) = first(x).value
 
 typealias __m128i NTuple{4, VecElement{Int32}}
