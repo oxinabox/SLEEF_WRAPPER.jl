@@ -10,10 +10,16 @@ push!(LOAD_PATH, "./arch_modules")
 import SLEEF_purec
 import SLEEF_sse2
 import SLEEF_avx
-import SLEEF_avx2
+#import SLEEF_avx2
 import SLEEF_fma4
 
-const bench = ("Base","Libm","SLEEF_purec", "SLEEF_sse2", "SLEEF_avx", "SLEEF_avx2", "SLEEF_fma4")
+const bench = ("Base","Libm",
+				"SLEEF_purec",
+				"SLEEF_sse2",
+				"SLEEF_avx",
+#				"SLEEF_avx2",
+				"SLEEF_fma4"
+)
 const suite = BenchmarkGroup()
 for mod in bench
     suite[mod] = BenchmarkGroup([mod])
@@ -84,7 +90,7 @@ results = run(suite; verbose=VERBOSE)
 for f in sort(collect(keys(micros)))
     println()
 
-    print_with_color(:magenta, string(f, "--------------------------n"))  
+    print_with_color(:magenta, string(f, "--------------------------\n"))  
     print_with_color(:magenta, string("↓", f, " benchmark ↓\n"))
 	#print_with_color(:blue, "median ratio Sleef/Base\n")
     #println(ratio(median(results["Sleef"][f]), median(results["Base"][f])))
@@ -98,7 +104,7 @@ for f in sort(collect(keys(micros)))
     end
 
     print_with_color(:magenta, string("↑"f, " benchmark ↑ \n"))
-    print_with_color(:magenta, string(f, "--------------------------n"))
+    print_with_color(:magenta, string(f, "--------------------------\n"))
 end
 
 #for f in sort(collect(keys(micros_u1)))
