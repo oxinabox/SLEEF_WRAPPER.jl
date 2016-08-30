@@ -54,7 +54,7 @@ elseif SIMD_ARCH == "avx" || SIMD_ARCH == "fma4"
 		x::VInt
 		y::VInt
 	end
-elseif SIMD_ARCH == "AVX2"
+elseif SIMD_ARCH == "avx2"
 	typealias VDouble __m256d
 	typealias VInt __m128i
 	typealias VFloat __m256
