@@ -1,1275 +1,1288 @@
 Warming up...
 (1/6) benchmarking "Base"...
   (1/14) benchmarking "exp2"...
-  done (took 0.352270582 seconds)
+  done (took 0.406773419 seconds)
   (2/14) benchmarking "sinh"...
-  done (took 3.503710651 seconds)
+  done (took 3.852884501 seconds)
   (3/14) benchmarking "tan"...
-  done (took 1.428473682 seconds)
+  done (took 1.451630848 seconds)
   (4/14) benchmarking "expm1"...
-  done (took 0.156608207 seconds)
+  done (took 0.187148751 seconds)
   (5/14) benchmarking "exp10"...
-  done (took 0.279901941 seconds)
+  done (took 0.317881276 seconds)
   (6/14) benchmarking "log10"...
-  done (took 0.197543684 seconds)
+  done (took 0.230380232 seconds)
   (7/14) benchmarking "exp"...
-  done (took 0.142236264 seconds)
+  done (took 0.158308339 seconds)
   (8/14) benchmarking "cosh"...
-  done (took 3.070453395 seconds)
+  done (took 3.402000528 seconds)
   (9/14) benchmarking "cbrt"...
-  done (took 0.134164827 seconds)
+  done (took 0.152901816 seconds)
   (10/14) benchmarking "log"...
-  done (took 0.190861954 seconds)
+  done (took 0.224524515 seconds)
   (11/14) benchmarking "log1p"...
-  done (took 0.335414404 seconds)
+  done (took 0.375097623 seconds)
   (12/14) benchmarking "tanh"...
-  done (took 3.693169822 seconds)
+  done (took 4.147189431 seconds)
   (13/14) benchmarking "cos"...
-  done (took 1.188263905 seconds)
+  done (took 1.316179759 seconds)
   (14/14) benchmarking "sin"...
-  done (took 1.202497498 seconds)
-done (took 16.132370883 seconds)
+  done (took 1.241997756 seconds)
+done (took 17.721791172 seconds)
 (2/6) benchmarking "SLEEF_fma4"...
   (1/14) benchmarking "exp2"...
-  done (took 0.181331956 seconds)
+  done (took 0.215439945 seconds)
   (2/14) benchmarking "sinh"...
-  done (took 5.037283645 seconds)
+  done (took 5.461560255 seconds)
   (3/14) benchmarking "tan"...
-  done (took 0.644044956 seconds)
+  done (took 0.731817968 seconds)
   (4/14) benchmarking "expm1"...
-  done (took 0.236320716 seconds)
+  done (took 0.254846571 seconds)
   (5/14) benchmarking "exp10"...
-  done (took 0.190804194 seconds)
+  done (took 0.219243005 seconds)
   (6/14) benchmarking "log10"...
-  done (took 0.334537137 seconds)
+  done (took 0.340934445 seconds)
   (7/14) benchmarking "exp"...
-  done (took 0.166533131 seconds)
+  done (took 0.17378162 seconds)
   (8/14) benchmarking "cosh"...
-  done (took 5.017372139 seconds)
+  done (took 5.603846994 seconds)
   (9/14) benchmarking "cbrt"...
-  done (took 0.128733962 seconds)
+  done (took 0.144511689 seconds)
   (10/14) benchmarking "log"...
-  done (took 0.267504643 seconds)
+  done (took 0.324150011 seconds)
   (11/14) benchmarking "log1p"...
-  done (took 0.396626317 seconds)
+  done (took 0.441781416 seconds)
   (12/14) benchmarking "tanh"...
-  done (took 5.503686403 seconds)
+  done (took 6.021814933 seconds)
   (13/14) benchmarking "cos"...
-  done (took 0.414538623 seconds)
+  done (took 0.463876763 seconds)
   (14/14) benchmarking "sin"...
-  done (took 0.410230263 seconds)
-done (took 19.087054529 seconds)
+  done (took 0.416607436 seconds)
+done (took 20.990325376 seconds)
 (3/6) benchmarking "Libm"...
   (1/14) benchmarking "exp2"...
-  done (took 0.163525354 seconds)
+  done (took 0.186862413 seconds)
   (2/14) benchmarking "sinh"...
-  done (took 3.754663761 seconds)
+  done (took 3.887918664 seconds)
   (3/14) benchmarking "tan"...
-  done (took 0.44805118 seconds)
+  done (took 0.478738163 seconds)
   (4/14) benchmarking "expm1"...
-  done (took 0.201133704 seconds)
+  done (took 0.220278226 seconds)
   (5/14) benchmarking "exp10"...
-  done (took 0.18901361 seconds)
+  done (took 0.200917408 seconds)
   (6/14) benchmarking "log10"...
-  done (took 0.308370203 seconds)
+  done (took 0.322936768 seconds)
   (7/14) benchmarking "exp"...
-  done (took 0.163818524 seconds)
+  done (took 0.171620861 seconds)
   (8/14) benchmarking "cosh"...
-  done (took 3.616941267 seconds)
+  done (took 3.79280197 seconds)
   (9/14) benchmarking "cbrt"...
-  done (took 0.118996505 seconds)
+  done (took 0.140825912 seconds)
   (10/14) benchmarking "log"...
-  done (took 0.181896926 seconds)
+  done (took 0.21936334 seconds)
   (11/14) benchmarking "log1p"...
-  done (took 0.355425368 seconds)
+  done (took 0.396072802 seconds)
   (12/14) benchmarking "tanh"...
-  done (took 4.837721824 seconds)
+  done (took 5.266911034 seconds)
   (13/14) benchmarking "cos"...
-  done (took 0.261844937 seconds)
+  done (took 0.298063681 seconds)
   (14/14) benchmarking "sin"...
-  done (took 0.253451273 seconds)
-done (took 15.012761674 seconds)
+  done (took 0.280757159 seconds)
+done (took 16.045628227 seconds)
 (4/6) benchmarking "SLEEF_sse2"...
   (1/14) benchmarking "exp2"...
-  done (took 0.193694976 seconds)
+  done (took 0.190198819 seconds)
   (2/14) benchmarking "sinh"...
-  done (took 3.9914571 seconds)
+  done (took 4.396793658 seconds)
   (3/14) benchmarking "tan"...
-  done (took 0.483422823 seconds)
+  done (took 0.560156365 seconds)
   (4/14) benchmarking "expm1"...
-  done (took 0.214391748 seconds)
+  done (took 0.211139241 seconds)
   (5/14) benchmarking "exp10"...
-  done (took 0.179045934 seconds)
+  done (took 0.187454402 seconds)
   (6/14) benchmarking "log10"...
-  done (took 0.303760848 seconds)
+  done (took 0.327385169 seconds)
   (7/14) benchmarking "exp"...
-  done (took 0.143082606 seconds)
+  done (took 0.169800994 seconds)
   (8/14) benchmarking "cosh"...
-  done (took 3.885537484 seconds)
+  done (took 4.31805974 seconds)
   (9/14) benchmarking "cbrt"...
-  done (took 0.120050966 seconds)
+  done (took 0.139215485 seconds)
   (10/14) benchmarking "log"...
-  done (took 0.205250691 seconds)
+  done (took 0.251626685 seconds)
   (11/14) benchmarking "log1p"...
-  done (took 0.385978907 seconds)
+  done (took 0.424738309 seconds)
   (12/14) benchmarking "tanh"...
-  done (took 5.389898553 seconds)
+  done (took 5.903229452 seconds)
   (13/14) benchmarking "cos"...
-  done (took 0.287846663 seconds)
+  done (took 0.283822485 seconds)
   (14/14) benchmarking "sin"...
-  done (took 0.273733373 seconds)
-done (took 16.209665336 seconds)
+  done (took 0.30130103 seconds)
+done (took 17.851981667 seconds)
 (5/6) benchmarking "SLEEF_purec"...
   (1/14) benchmarking "exp2"...
-  done (took 0.207567471 seconds)
+  done (took 0.23869368 seconds)
   (2/14) benchmarking "sinh"...
-  done (took 6.996448978 seconds)
+  done (took 7.610503216 seconds)
   (3/14) benchmarking "tan"...
-  done (took 0.636665089 seconds)
+  done (took 0.684834928 seconds)
   (4/14) benchmarking "expm1"...
-  done (took 0.283895526 seconds)
+  done (took 0.297759593 seconds)
   (5/14) benchmarking "exp10"...
-  done (took 0.214933793 seconds)
+  done (took 0.216344184 seconds)
   (6/14) benchmarking "log10"...
-  done (took 0.334212794 seconds)
+  done (took 0.372477671 seconds)
   (7/14) benchmarking "exp"...
-  done (took 0.149020732 seconds)
+  done (took 0.164167334 seconds)
   (8/14) benchmarking "cosh"...
-  done (took 7.022785227 seconds)
+  done (took 7.445733356 seconds)
   (9/14) benchmarking "cbrt"...
-  done (took 0.118350246 seconds)
+  done (took 0.148727382 seconds)
   (10/14) benchmarking "log"...
-  done (took 0.202599577 seconds)
+  done (took 0.226191374 seconds)
   (11/14) benchmarking "log1p"...
-  done (took 0.394542115 seconds)
+  done (took 0.471537349 seconds)
   (12/14) benchmarking "tanh"...
-  done (took 8.141702077 seconds)
+  done (took 8.967684231 seconds)
   (13/14) benchmarking "cos"...
-  done (took 0.329785338 seconds)
+  done (took 0.355297576 seconds)
   (14/14) benchmarking "sin"...
-  done (took 0.302223526 seconds)
-done (took 25.541240611 seconds)
+  done (took 0.348895755 seconds)
+done (took 27.735364363 seconds)
 (6/6) benchmarking "SLEEF_avx"...
   (1/14) benchmarking "exp2"...
-  done (took 0.20905403 seconds)
+  done (took 0.245501599 seconds)
   (2/14) benchmarking "sinh"...
-  done (took 6.343662647 seconds)
+  done (took 7.240123187 seconds)
   (3/14) benchmarking "tan"...
-  done (took 0.823141398 seconds)
+  done (took 0.905136927 seconds)
   (4/14) benchmarking "expm1"...
-  done (took 0.283928895 seconds)
+  done (took 0.332948405 seconds)
   (5/14) benchmarking "exp10"...
-  done (took 0.206293375 seconds)
+  done (took 0.23663445 seconds)
   (6/14) benchmarking "log10"...
-  done (took 0.385950736 seconds)
+  done (took 0.41880335 seconds)
   (7/14) benchmarking "exp"...
-  done (took 0.172749317 seconds)
+  done (took 0.175243343 seconds)
   (8/14) benchmarking "cosh"...
-  done (took 6.419707398 seconds)
+  done (took 6.605791654 seconds)
   (9/14) benchmarking "cbrt"...
-  done (took 0.122942185 seconds)
+  done (took 0.147603829 seconds)
   (10/14) benchmarking "log"...
-  done (took 0.30112289 seconds)
+  done (took 0.326912042 seconds)
   (11/14) benchmarking "log1p"...
-  done (took 0.449635749 seconds)
+  done (took 0.535704626 seconds)
   (12/14) benchmarking "tanh"...
-  done (took 6.811028215 seconds)
+  done (took 8.027073594 seconds)
   (13/14) benchmarking "cos"...
-  done (took 0.529007296 seconds)
+  done (took 0.562334842 seconds)
   (14/14) benchmarking "sin"...
-  done (took 0.501000304 seconds)
-done (took 23.711070644 seconds)
+  done (took 0.58270558 seconds)
+done (took 26.51229351 seconds)
 Running micro benchmarks...
 
-[1m[35mcbrt--------------------------
-[0m[1m[35m↓cbrt benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          1712
+cbrt--------------------------
+↓cbrt benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          1653
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  797.03 kb
   allocs estimate:  3
-  minimum time:     2.63 ms (0.00% GC)
-  median time:      2.89 ms (0.00% GC)
-  mean time:        2.92 ms (1.27% GC)
-  maximum time:     6.25 ms (0.00% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          972
+  minimum time:     2.56 ms (0.00% GC)
+  median time:      3.15 ms (0.00% GC)
+  mean time:        3.02 ms (1.05% GC)
+  maximum time:     7.53 ms (0.00% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          883
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  797.03 kb
   allocs estimate:  3
   minimum time:     4.88 ms (0.00% GC)
-  median time:      5.15 ms (0.00% GC)
-  mean time:        5.15 ms (0.66% GC)
-  maximum time:     6.54 ms (15.91% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          1021
+  median time:      5.78 ms (0.00% GC)
+  mean time:        5.66 ms (0.60% GC)
+  maximum time:     10.54 ms (12.64% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          916
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  797.03 kb
   allocs estimate:  3
   minimum time:     4.53 ms (0.00% GC)
-  median time:      4.84 ms (0.00% GC)
-  mean time:        4.90 ms (0.74% GC)
-  maximum time:     10.53 ms (0.00% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          1009
+  median time:      5.60 ms (0.00% GC)
+  mean time:        5.46 ms (0.51% GC)
+  maximum time:     9.68 ms (0.00% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          893
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  797.03 kb
   allocs estimate:  3
-  minimum time:     4.67 ms (0.00% GC)
-  median time:      4.96 ms (0.00% GC)
-  mean time:        4.96 ms (0.69% GC)
-  maximum time:     6.59 ms (16.67% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          555
+  minimum time:     4.65 ms (0.00% GC)
+  median time:      5.77 ms (0.00% GC)
+  mean time:        5.60 ms (0.49% GC)
+  maximum time:     8.43 ms (0.00% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          520
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  797.03 kb
   allocs estimate:  3
-  minimum time:     8.20 ms (0.00% GC)
-  median time:      8.88 ms (0.00% GC)
-  mean time:        9.01 ms (0.42% GC)
-  maximum time:     15.90 ms (0.00% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          641
+  minimum time:     8.21 ms (0.00% GC)
+  median time:      9.81 ms (0.00% GC)
+  mean time:        9.62 ms (0.27% GC)
+  maximum time:     11.36 ms (7.20% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          586
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  797.03 kb
   allocs estimate:  3
-  minimum time:     7.29 ms (0.00% GC)
-  median time:      7.69 ms (0.00% GC)
-  mean time:        7.80 ms (0.47% GC)
-  maximum time:     14.68 ms (0.00% GC)
+  minimum time:     7.36 ms (0.00% GC)
+  median time:      8.45 ms (0.00% GC)
+  mean time:        8.54 ms (0.35% GC)
+  maximum time:     11.11 ms (0.00% GC)
 
-[1m[35m↑cbrt benchmark ↑ 
-[0m[1m[35mcbrt--------------------------n[0m
-[1m[35mcos--------------------------
-[0m[1m[35m↓cos benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
+↑cbrt benchmark ↑ 
+cbrt--------------------------
+
+cos--------------------------
+↓cos benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
   samples:          5
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  48.82 mb
   allocs estimate:  3
-  minimum time:     1.00 s (0.06% GC)
-  median time:      1.01 s (0.15% GC)
-  mean time:        1.01 s (0.13% GC)
-  maximum time:     1.02 s (0.15% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          36
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     138.25 ms (1.11% GC)
-  median time:      140.61 ms (1.10% GC)
-  mean time:        140.61 ms (1.10% GC)
-  maximum time:     143.52 ms (1.11% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          27
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     183.93 ms (0.82% GC)
-  median time:      189.56 ms (0.83% GC)
-  mean time:        189.94 ms (0.84% GC)
-  maximum time:     204.09 ms (0.74% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          28
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     175.99 ms (0.88% GC)
-  median time:      178.91 ms (0.86% GC)
-  mean time:        181.04 ms (0.87% GC)
-  maximum time:     205.56 ms (0.73% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          13
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     404.19 ms (0.37% GC)
-  median time:      412.39 ms (0.37% GC)
-  mean time:        411.72 ms (0.35% GC)
-  maximum time:     419.72 ms (0.12% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          17
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     290.75 ms (0.53% GC)
-  median time:      294.34 ms (0.56% GC)
-  mean time:        295.20 ms (0.54% GC)
-  maximum time:     304.14 ms (0.19% GC)
-
-[1m[35m↑cos benchmark ↑ 
-[0m[1m[35mcos--------------------------n[0m
-[1m[35mcosh--------------------------
-[0m[1m[35m↓cosh benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          2
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     3.06 s (0.80% GC)
-  median time:      3.12 s (2.98% GC)
-  mean time:        3.12 s (2.98% GC)
-  maximum time:     3.17 s (5.10% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          2
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     3.43 s (1.04% GC)
-  median time:      3.49 s (2.56% GC)
-  mean time:        3.49 s (2.56% GC)
-  maximum time:     3.55 s (4.03% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          1
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     6.63 s (0.36% GC)
-  median time:      6.63 s (0.36% GC)
-  mean time:        6.63 s (0.36% GC)
-  maximum time:     6.63 s (0.36% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          2
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     3.65 s (0.65% GC)
-  median time:      3.70 s (2.23% GC)
-  mean time:        3.70 s (2.23% GC)
-  maximum time:     3.75 s (3.76% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          1
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     6.20 s (0.39% GC)
-  median time:      6.20 s (0.39% GC)
-  mean time:        6.20 s (0.39% GC)
-  maximum time:     6.20 s (0.39% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          2
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     4.77 s (0.52% GC)
-  median time:      4.85 s (1.73% GC)
-  mean time:        4.85 s (1.73% GC)
-  maximum time:     4.93 s (2.90% GC)
-
-[1m[35m↑cosh benchmark ↑ 
-[0m[1m[35mcosh--------------------------n[0m
-[1m[35mexp--------------------------
-[0m[1m[35m↓exp benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          209
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     21.74 ms (0.00% GC)
-  median time:      23.90 ms (0.00% GC)
-  mean time:        23.97 ms (1.10% GC)
-  maximum time:     30.30 ms (6.24% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          224
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     21.01 ms (0.00% GC)
-  median time:      22.03 ms (0.00% GC)
-  mean time:        22.31 ms (1.18% GC)
-  maximum time:     31.74 ms (3.43% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          175
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     27.26 ms (0.00% GC)
-  median time:      28.54 ms (0.00% GC)
-  mean time:        28.62 ms (0.87% GC)
-  maximum time:     30.86 ms (3.27% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          197
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     24.30 ms (0.00% GC)
-  median time:      25.07 ms (0.00% GC)
-  mean time:        25.43 ms (1.08% GC)
-  maximum time:     32.37 ms (0.00% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          86
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     55.56 ms (0.00% GC)
-  median time:      58.52 ms (0.00% GC)
-  mean time:        58.66 ms (0.42% GC)
-  maximum time:     61.63 ms (1.54% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          118
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     40.44 ms (0.00% GC)
-  median time:      42.38 ms (0.00% GC)
-  mean time:        42.51 ms (0.59% GC)
-  maximum time:     46.71 ms (0.00% GC)
-
-[1m[35m↑exp benchmark ↑ 
-[0m[1m[35mexp--------------------------n[0m
-[1m[35mexp10--------------------------
-[0m[1m[35m↓exp10 benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          33
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     148.64 ms (0.00% GC)
-  median time:      153.23 ms (0.00% GC)
-  mean time:        154.73 ms (0.20% GC)
-  maximum time:     171.16 ms (0.00% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          105
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     45.94 ms (0.00% GC)
-  median time:      47.78 ms (0.00% GC)
-  mean time:        47.91 ms (0.54% GC)
-  maximum time:     50.21 ms (1.99% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          55
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     88.39 ms (0.00% GC)
-  median time:      90.25 ms (0.00% GC)
-  mean time:        91.85 ms (0.39% GC)
-  maximum time:     104.95 ms (2.27% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          85
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     56.75 ms (0.00% GC)
-  median time:      59.38 ms (0.00% GC)
-  mean time:        59.36 ms (0.42% GC)
-  maximum time:     64.54 ms (1.49% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          55
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     85.55 ms (0.00% GC)
-  median time:      90.11 ms (0.00% GC)
-  mean time:        91.64 ms (0.31% GC)
-  maximum time:     112.22 ms (0.00% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          75
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     64.32 ms (0.00% GC)
-  median time:      67.31 ms (0.00% GC)
-  mean time:        67.44 ms (0.37% GC)
-  maximum time:     71.43 ms (0.00% GC)
-
-[1m[35m↑exp10 benchmark ↑ 
-[0m[1m[35mexp10--------------------------n[0m
-[1m[35mexp2--------------------------
-[0m[1m[35m↓exp2 benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          413
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     11.26 ms (0.00% GC)
-  median time:      11.97 ms (0.00% GC)
-  mean time:        12.10 ms (2.16% GC)
-  maximum time:     18.42 ms (9.83% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          106
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     45.15 ms (0.00% GC)
-  median time:      47.19 ms (0.00% GC)
-  mean time:        47.37 ms (0.61% GC)
-  maximum time:     54.28 ms (4.07% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          56
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     86.99 ms (0.00% GC)
-  median time:      89.60 ms (0.00% GC)
-  mean time:        89.76 ms (0.28% GC)
-  maximum time:     93.93 ms (0.00% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          88
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     54.89 ms (0.00% GC)
-  median time:      57.25 ms (0.00% GC)
-  mean time:        57.24 ms (0.44% GC)
-  maximum time:     60.98 ms (1.75% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          56
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     85.62 ms (0.00% GC)
-  median time:      89.38 ms (0.00% GC)
-  mean time:        89.45 ms (0.29% GC)
-  maximum time:     101.13 ms (0.00% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          75
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  6.26 mb
-  allocs estimate:  3
-  minimum time:     64.58 ms (0.00% GC)
-  median time:      66.85 ms (0.00% GC)
-  mean time:        67.42 ms (0.36% GC)
-  maximum time:     77.61 ms (0.00% GC)
-
-[1m[35m↑exp2 benchmark ↑ 
-[0m[1m[35mexp2--------------------------n[0m
-[1m[35mexpm1--------------------------
-[0m[1m[35m↓expm1 benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          130
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     36.51 ms (0.00% GC)
-  median time:      38.06 ms (1.24% GC)
-  mean time:        38.51 ms (1.33% GC)
-  maximum time:     45.21 ms (2.37% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          63
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     77.15 ms (0.00% GC)
-  median time:      79.26 ms (0.00% GC)
-  mean time:        80.51 ms (0.66% GC)
-  maximum time:     93.95 ms (0.00% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          30
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     164.53 ms (0.00% GC)
-  median time:      167.14 ms (0.29% GC)
-  mean time:        167.98 ms (0.39% GC)
-  maximum time:     176.27 ms (0.56% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          58
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     84.66 ms (0.00% GC)
-  median time:      87.59 ms (0.54% GC)
-  mean time:        87.67 ms (0.57% GC)
-  maximum time:     93.06 ms (1.07% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          29
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     166.45 ms (0.00% GC)
-  median time:      177.91 ms (0.00% GC)
-  mean time:        178.00 ms (0.33% GC)
-  maximum time:     189.12 ms (0.72% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          39
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     124.08 ms (0.00% GC)
-  median time:      127.99 ms (0.00% GC)
-  mean time:        128.54 ms (0.44% GC)
-  maximum time:     139.24 ms (0.77% GC)
-
-[1m[35m↑expm1 benchmark ↑ 
-[0m[1m[35mexpm1--------------------------n[0m
-[1m[35mlog--------------------------
-[0m[1m[35m↓log benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          69
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     67.18 ms (0.00% GC)
-  median time:      72.39 ms (0.00% GC)
-  mean time:        73.33 ms (0.98% GC)
-  maximum time:     90.63 ms (1.92% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          72
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     65.49 ms (0.00% GC)
-  median time:      68.83 ms (0.70% GC)
-  mean time:        69.77 ms (0.86% GC)
-  maximum time:     76.27 ms (2.08% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          55
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     87.89 ms (0.00% GC)
-  median time:      91.19 ms (0.00% GC)
-  mean time:        91.94 ms (0.63% GC)
-  maximum time:     98.73 ms (1.04% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          44
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     110.65 ms (0.00% GC)
-  median time:      115.87 ms (0.41% GC)
-  mean time:        116.23 ms (0.51% GC)
-  maximum time:     121.58 ms (0.80% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          27
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     180.30 ms (0.87% GC)
-  median time:      189.24 ms (0.00% GC)
-  mean time:        189.35 ms (0.34% GC)
-  maximum time:     209.19 ms (1.04% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          32
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     151.49 ms (0.00% GC)
-  median time:      158.67 ms (0.30% GC)
-  mean time:        159.17 ms (0.45% GC)
-  maximum time:     173.25 ms (0.00% GC)
-
-[1m[35m↑log benchmark ↑ 
-[0m[1m[35mlog--------------------------n[0m
-[1m[35mlog10--------------------------
-[0m[1m[35m↓log10 benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          62
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     76.17 ms (0.00% GC)
-  median time:      80.02 ms (0.60% GC)
-  mean time:        81.06 ms (0.78% GC)
-  maximum time:     95.36 ms (1.62% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          32
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     152.95 ms (0.00% GC)
-  median time:      158.66 ms (0.31% GC)
-  mean time:        159.15 ms (0.41% GC)
-  maximum time:     173.15 ms (0.00% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          23
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     214.91 ms (0.00% GC)
-  median time:      220.00 ms (0.00% GC)
-  mean time:        221.10 ms (0.26% GC)
-  maximum time:     246.09 ms (0.40% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          26
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     185.33 ms (0.00% GC)
-  median time:      193.01 ms (0.25% GC)
-  mean time:        194.19 ms (0.32% GC)
-  maximum time:     224.76 ms (0.59% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          18
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     268.71 ms (0.00% GC)
-  median time:      279.15 ms (0.17% GC)
-  mean time:        278.54 ms (0.22% GC)
-  maximum time:     288.67 ms (0.34% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          25
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  16.80 mb
-  allocs estimate:  3
-  minimum time:     199.24 ms (0.00% GC)
-  median time:      206.01 ms (0.00% GC)
-  mean time:        206.01 ms (0.29% GC)
-  maximum time:     211.49 ms (0.00% GC)
-
-[1m[35m↑log10 benchmark ↑ 
-[0m[1m[35mlog10--------------------------n[0m
-[1m[35mlog1p--------------------------
-[0m[1m[35m↓log1p benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          126
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     36.21 ms (0.00% GC)
-  median time:      38.96 ms (1.23% GC)
-  mean time:        39.74 ms (1.59% GC)
-  maximum time:     50.89 ms (1.97% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          42
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     115.24 ms (0.00% GC)
-  median time:      119.09 ms (0.40% GC)
-  mean time:        119.79 ms (0.44% GC)
-  maximum time:     129.10 ms (0.00% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
+  minimum time:     1.02 s (0.13% GC)
+  median time:      1.06 s (0.13% GC)
+  mean time:        1.06 s (0.12% GC)
+  maximum time:     1.11 s (0.04% GC)
+details Libm
+BenchmarkTools.Trial: 
   samples:          34
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
-  memory estimate:  15.26 mb
+  memory estimate:  48.82 mb
   allocs estimate:  3
-  minimum time:     145.61 ms (0.00% GC)
-  median time:      148.91 ms (0.33% GC)
-  mean time:        150.34 ms (0.35% GC)
-  maximum time:     171.41 ms (0.00% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          27
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     176.13 ms (0.55% GC)
-  median time:      185.85 ms (0.00% GC)
-  mean time:        185.27 ms (0.26% GC)
-  maximum time:     192.45 ms (0.00% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          23
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     218.28 ms (0.00% GC)
-  median time:      221.85 ms (0.00% GC)
-  mean time:        225.52 ms (0.25% GC)
-  maximum time:     247.40 ms (0.59% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          32
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  15.26 mb
-  allocs estimate:  3
-  minimum time:     153.17 ms (0.00% GC)
-  median time:      157.07 ms (0.30% GC)
-  mean time:        157.67 ms (0.32% GC)
-  maximum time:     163.25 ms (0.00% GC)
-
-[1m[35m↑log1p benchmark ↑ 
-[0m[1m[35mlog1p--------------------------n[0m
-[1m[35msin--------------------------
-[0m[1m[35m↓sin benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          5
+  minimum time:     137.70 ms (0.85% GC)
+  median time:      149.85 ms (0.95% GC)
+  mean time:        149.17 ms (0.90% GC)
+  maximum time:     161.40 ms (0.75% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          25
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  48.82 mb
   allocs estimate:  3
-  minimum time:     1.02 s (0.05% GC)
-  median time:      1.03 s (0.16% GC)
-  mean time:        1.03 s (0.15% GC)
-  maximum time:     1.04 s (0.16% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          38
+  minimum time:     183.41 ms (0.61% GC)
+  median time:      207.43 ms (0.61% GC)
+  mean time:        204.71 ms (0.64% GC)
+  maximum time:     220.07 ms (0.21% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          31
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  48.82 mb
   allocs estimate:  3
-  minimum time:     130.76 ms (0.44% GC)
-  median time:      132.89 ms (1.16% GC)
-  mean time:        132.87 ms (1.16% GC)
-  maximum time:     135.32 ms (1.18% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          27
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     183.55 ms (0.86% GC)
-  median time:      187.72 ms (0.82% GC)
-  mean time:        188.81 ms (0.83% GC)
-  maximum time:     199.75 ms (0.79% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          35
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     139.97 ms (1.08% GC)
-  median time:      145.01 ms (1.11% GC)
-  mean time:        146.98 ms (1.17% GC)
-  maximum time:     162.29 ms (1.25% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          13
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     381.76 ms (0.74% GC)
-  median time:      388.49 ms (0.40% GC)
-  mean time:        391.07 ms (0.40% GC)
-  maximum time:     415.05 ms (0.38% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          18
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     281.89 ms (0.55% GC)
-  median time:      287.22 ms (0.54% GC)
-  mean time:        287.43 ms (0.53% GC)
-  maximum time:     292.14 ms (0.53% GC)
-
-[1m[35m↑sin benchmark ↑ 
-[0m[1m[35msin--------------------------n[0m
-[1m[35msinh--------------------------
-[0m[1m[35m↓sinh benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          2
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     3.49 s (0.71% GC)
-  median time:      3.52 s (2.41% GC)
-  mean time:        3.52 s (2.41% GC)
-  maximum time:     3.55 s (4.08% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          2
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     3.85 s (0.64% GC)
-  median time:      3.91 s (2.15% GC)
-  mean time:        3.91 s (2.15% GC)
-  maximum time:     3.97 s (3.62% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          1
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     6.80 s (0.37% GC)
-  median time:      6.80 s (0.37% GC)
-  mean time:        6.80 s (0.37% GC)
-  maximum time:     6.80 s (0.37% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          2
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     3.70 s (0.67% GC)
-  median time:      3.77 s (2.20% GC)
-  mean time:        3.77 s (2.20% GC)
-  maximum time:     3.83 s (3.67% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          1
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     6.23 s (0.39% GC)
-  median time:      6.23 s (0.39% GC)
-  mean time:        6.23 s (0.39% GC)
-  maximum time:     6.23 s (0.39% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          2
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     4.93 s (2.96% GC)
-  median time:      4.95 s (1.72% GC)
-  mean time:        4.95 s (1.72% GC)
-  maximum time:     4.96 s (0.49% GC)
-
-[1m[35m↑sinh benchmark ↑ 
-[0m[1m[35msinh--------------------------n[0m
-[1m[35mtan--------------------------
-[0m[1m[35m↓tan benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
-  samples:          5
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     1.13 s (0.13% GC)
-  median time:      1.18 s (0.13% GC)
-  mean time:        1.17 s (0.11% GC)
-  maximum time:     1.22 s (0.12% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
-  samples:          23
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     217.40 ms (0.68% GC)
-  median time:      222.49 ms (0.69% GC)
-  mean time:        222.55 ms (0.68% GC)
-  maximum time:     228.05 ms (0.69% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
-  samples:          13
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     384.17 ms (0.40% GC)
-  median time:      385.69 ms (0.40% GC)
-  mean time:        386.33 ms (0.38% GC)
-  maximum time:     389.86 ms (0.39% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
-  samples:          18
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     274.41 ms (0.55% GC)
-  median time:      283.06 ms (0.54% GC)
-  mean time:        285.83 ms (0.56% GC)
-  maximum time:     321.74 ms (0.48% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
-  samples:          9
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  48.82 mb
-  allocs estimate:  3
-  minimum time:     587.06 ms (0.28% GC)
-  median time:      612.80 ms (0.31% GC)
-  mean time:        616.04 ms (0.29% GC)
-  maximum time:     658.89 ms (0.24% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
+  minimum time:     151.34 ms (0.95% GC)
+  median time:      169.10 ms (0.82% GC)
+  mean time:        165.82 ms (0.80% GC)
+  maximum time:     181.12 ms (0.82% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
   samples:          12
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  48.82 mb
   allocs estimate:  3
-  minimum time:     419.61 ms (0.40% GC)
-  median time:      426.82 ms (0.42% GC)
-  mean time:        427.32 ms (0.40% GC)
-  maximum time:     439.84 ms (0.40% GC)
+  minimum time:     413.98 ms (0.33% GC)
+  median time:      461.03 ms (0.28% GC)
+  mean time:        452.53 ms (0.28% GC)
+  maximum time:     479.29 ms (0.24% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          15
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     323.21 ms (0.50% GC)
+  median time:      338.04 ms (0.39% GC)
+  mean time:        337.92 ms (0.41% GC)
+  maximum time:     354.63 ms (0.42% GC)
 
-[1m[35m↑tan benchmark ↑ 
-[0m[1m[35mtan--------------------------n[0m
-[1m[35mtanh--------------------------
-[0m[1m[35m↓tanh benchmark ↓
-[0m
-[1m[34mdetails Base
-[0mBenchmarkTools.Trial: 
+↑cos benchmark ↑ 
+cos--------------------------
+
+cosh--------------------------
+↓cosh benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
   samples:          2
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  381.47 mb
   allocs estimate:  3
-  minimum time:     3.52 s (0.70% GC)
-  median time:      3.56 s (2.34% GC)
-  mean time:        3.56 s (2.34% GC)
-  maximum time:     3.61 s (3.94% GC)
-[1m[34mdetails Libm
-[0mBenchmarkTools.Trial: 
+  minimum time:     3.24 s (0.88% GC)
+  median time:      3.36 s (3.12% GC)
+  mean time:        3.36 s (3.12% GC)
+  maximum time:     3.47 s (5.21% GC)
+details Libm
+BenchmarkTools.Trial: 
   samples:          2
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  381.47 mb
   allocs estimate:  3
-  minimum time:     4.55 s (0.53% GC)
-  median time:      4.60 s (1.80% GC)
-  mean time:        4.60 s (1.80% GC)
-  maximum time:     4.66 s (3.05% GC)
-[1m[34mdetails SLEEF_purec
-[0mBenchmarkTools.Trial: 
+  minimum time:     3.86 s (0.71% GC)
+  median time:      3.93 s (2.50% GC)
+  mean time:        3.93 s (2.50% GC)
+  maximum time:     4.00 s (4.22% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
   samples:          1
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  381.47 mb
   allocs estimate:  3
-  minimum time:     7.79 s (0.47% GC)
-  median time:      7.79 s (0.47% GC)
-  mean time:        7.79 s (0.47% GC)
-  maximum time:     7.79 s (0.47% GC)
-[1m[34mdetails SLEEF_sse2
-[0mBenchmarkTools.Trial: 
+  minimum time:     7.28 s (0.36% GC)
+  median time:      7.28 s (0.36% GC)
+  mean time:        7.28 s (0.36% GC)
+  maximum time:     7.28 s (0.36% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          2
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     3.82 s (0.66% GC)
+  median time:      4.00 s (2.22% GC)
+  mean time:        4.00 s (2.22% GC)
+  maximum time:     4.18 s (3.66% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
   samples:          1
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  381.47 mb
   allocs estimate:  3
-  minimum time:     5.10 s (0.49% GC)
-  median time:      5.10 s (0.49% GC)
-  mean time:        5.10 s (0.49% GC)
-  maximum time:     5.10 s (0.49% GC)
-[1m[34mdetails SLEEF_avx
-[0mBenchmarkTools.Trial: 
+  minimum time:     6.73 s (0.39% GC)
+  median time:      6.73 s (0.39% GC)
+  mean time:        6.73 s (0.39% GC)
+  maximum time:     6.73 s (0.39% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
   samples:          1
   evals/sample:     1
   time tolerance:   5.00%
   memory tolerance: 1.00%
   memory estimate:  381.47 mb
   allocs estimate:  3
-  minimum time:     6.91 s (0.36% GC)
-  median time:      6.91 s (0.36% GC)
-  mean time:        6.91 s (0.36% GC)
-  maximum time:     6.91 s (0.36% GC)
-[1m[34mdetails SLEEF_fma4
-[0mBenchmarkTools.Trial: 
-  samples:          1
-  evals/sample:     1
-  time tolerance:   5.00%
-  memory tolerance: 1.00%
-  memory estimate:  381.47 mb
-  allocs estimate:  3
-  minimum time:     5.31 s (0.45% GC)
-  median time:      5.31 s (0.45% GC)
-  mean time:        5.31 s (0.45% GC)
-  maximum time:     5.31 s (0.45% GC)
+  minimum time:     5.38 s (0.50% GC)
+  median time:      5.38 s (0.50% GC)
+  mean time:        5.38 s (0.50% GC)
+  maximum time:     5.38 s (0.50% GC)
 
-[1m[35m↑tanh benchmark ↑ 
-[0m[1m[35mtanh--------------------------n[0m
+↑cosh benchmark ↑ 
+cosh--------------------------
+
+exp--------------------------
+↓exp benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          193
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     22.27 ms (0.00% GC)
+  median time:      26.03 ms (0.00% GC)
+  mean time:        25.99 ms (0.85% GC)
+  maximum time:     30.26 ms (0.00% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          214
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     20.81 ms (0.00% GC)
+  median time:      23.06 ms (0.00% GC)
+  mean time:        23.38 ms (0.86% GC)
+  maximum time:     28.34 ms (3.15% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          159
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     27.04 ms (0.00% GC)
+  median time:      32.61 ms (0.00% GC)
+  mean time:        31.59 ms (0.61% GC)
+  maximum time:     34.94 ms (2.59% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          178
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     24.32 ms (0.00% GC)
+  median time:      29.20 ms (0.00% GC)
+  mean time:        28.16 ms (0.72% GC)
+  maximum time:     34.90 ms (2.09% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          80
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     55.26 ms (0.00% GC)
+  median time:      62.72 ms (0.00% GC)
+  mean time:        62.89 ms (0.34% GC)
+  maximum time:     71.99 ms (0.00% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          107
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     41.27 ms (0.00% GC)
+  median time:      48.14 ms (0.00% GC)
+  mean time:        47.18 ms (0.46% GC)
+  maximum time:     53.02 ms (0.00% GC)
+
+↑exp benchmark ↑ 
+exp--------------------------
+
+exp10--------------------------
+↓exp10 benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          30
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     148.44 ms (0.00% GC)
+  median time:      177.49 ms (0.00% GC)
+  mean time:        172.16 ms (0.12% GC)
+  maximum time:     187.52 ms (0.00% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          93
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     45.80 ms (0.00% GC)
+  median time:      54.72 ms (0.00% GC)
+  mean time:        54.03 ms (0.41% GC)
+  maximum time:     60.90 ms (0.00% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          49
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     89.73 ms (0.00% GC)
+  median time:      103.20 ms (0.00% GC)
+  mean time:        102.20 ms (0.19% GC)
+  maximum time:     110.84 ms (0.00% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          76
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     57.66 ms (0.00% GC)
+  median time:      66.42 ms (0.00% GC)
+  mean time:        66.01 ms (0.31% GC)
+  maximum time:     72.79 ms (1.54% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          52
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     86.65 ms (0.83% GC)
+  median time:      95.38 ms (0.00% GC)
+  mean time:        96.37 ms (0.20% GC)
+  maximum time:     108.53 ms (0.00% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          67
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     65.53 ms (0.00% GC)
+  median time:      77.77 ms (0.00% GC)
+  mean time:        75.27 ms (0.28% GC)
+  maximum time:     83.89 ms (1.11% GC)
+
+↑exp10 benchmark ↑ 
+exp10--------------------------
+
+exp2--------------------------
+↓exp2 benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          386
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     11.09 ms (0.00% GC)
+  median time:      13.01 ms (0.00% GC)
+  mean time:        12.95 ms (1.75% GC)
+  maximum time:     16.61 ms (5.42% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          98
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     44.38 ms (0.00% GC)
+  median time:      53.36 ms (0.00% GC)
+  mean time:        51.47 ms (0.53% GC)
+  maximum time:     58.83 ms (0.00% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          51
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     86.10 ms (0.00% GC)
+  median time:      101.73 ms (0.00% GC)
+  mean time:        98.83 ms (0.19% GC)
+  maximum time:     109.19 ms (0.72% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          79
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     54.70 ms (0.00% GC)
+  median time:      63.64 ms (0.00% GC)
+  mean time:        63.36 ms (0.33% GC)
+  maximum time:     72.31 ms (1.93% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          52
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     86.40 ms (0.00% GC)
+  median time:      96.77 ms (0.00% GC)
+  mean time:        96.65 ms (0.21% GC)
+  maximum time:     109.65 ms (0.00% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          70
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  6.26 mb
+  allocs estimate:  3
+  minimum time:     63.99 ms (0.00% GC)
+  median time:      72.84 ms (0.00% GC)
+  mean time:        71.98 ms (0.30% GC)
+  maximum time:     83.02 ms (0.00% GC)
+
+↑exp2 benchmark ↑ 
+exp2--------------------------
+
+expm1--------------------------
+↓expm1 benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          112
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     39.37 ms (0.00% GC)
+  median time:      44.98 ms (0.91% GC)
+  mean time:        44.70 ms (1.13% GC)
+  maximum time:     53.51 ms (0.00% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          58
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     77.95 ms (0.00% GC)
+  median time:      87.91 ms (0.44% GC)
+  mean time:        87.70 ms (0.50% GC)
+  maximum time:     96.47 ms (0.90% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          27
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     167.46 ms (0.00% GC)
+  median time:      189.53 ms (0.00% GC)
+  mean time:        185.65 ms (0.22% GC)
+  maximum time:     203.26 ms (0.48% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          53
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     86.11 ms (0.86% GC)
+  median time:      97.00 ms (0.00% GC)
+  mean time:        95.76 ms (0.39% GC)
+  maximum time:     106.97 ms (0.78% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          26
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     181.30 ms (0.40% GC)
+  median time:      199.38 ms (0.18% GC)
+  mean time:        196.86 ms (0.20% GC)
+  maximum time:     206.68 ms (0.00% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          35
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     123.28 ms (0.00% GC)
+  median time:      147.85 ms (0.00% GC)
+  mean time:        142.96 ms (0.31% GC)
+  maximum time:     170.96 ms (0.00% GC)
+
+↑expm1 benchmark ↑ 
+expm1--------------------------
+
+log--------------------------
+↓log benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          65
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     66.54 ms (0.00% GC)
+  median time:      79.10 ms (0.00% GC)
+  mean time:        77.93 ms (0.78% GC)
+  maximum time:     91.55 ms (1.04% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          66
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     66.14 ms (0.00% GC)
+  median time:      77.62 ms (0.46% GC)
+  mean time:        76.87 ms (0.74% GC)
+  maximum time:     86.75 ms (0.97% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          53
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     82.91 ms (0.00% GC)
+  median time:      96.32 ms (0.00% GC)
+  mean time:        95.15 ms (0.54% GC)
+  maximum time:     105.62 ms (0.74% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          49
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     90.23 ms (0.00% GC)
+  median time:      101.48 ms (0.00% GC)
+  mean time:        102.24 ms (0.53% GC)
+  maximum time:     115.55 ms (0.68% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          25
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     179.67 ms (0.00% GC)
+  median time:      205.89 ms (0.00% GC)
+  mean time:        208.32 ms (0.23% GC)
+  maximum time:     226.81 ms (0.34% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          30
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     150.05 ms (0.00% GC)
+  median time:      170.90 ms (0.24% GC)
+  mean time:        171.30 ms (0.32% GC)
+  maximum time:     192.18 ms (0.49% GC)
+
+↑log benchmark ↑ 
+log--------------------------
+
+log10--------------------------
+↓log10 benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          57
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     77.51 ms (2.12% GC)
+  median time:      90.47 ms (0.00% GC)
+  mean time:        88.89 ms (0.64% GC)
+  maximum time:     97.36 ms (0.92% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          29
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     161.11 ms (0.50% GC)
+  median time:      179.64 ms (0.00% GC)
+  mean time:        178.02 ms (0.33% GC)
+  maximum time:     198.17 ms (0.48% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          21
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     217.81 ms (0.00% GC)
+  median time:      242.17 ms (0.00% GC)
+  mean time:        239.76 ms (0.23% GC)
+  maximum time:     252.31 ms (0.31% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          25
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     178.36 ms (0.00% GC)
+  median time:      205.19 ms (0.00% GC)
+  mean time:        200.87 ms (0.26% GC)
+  maximum time:     220.59 ms (0.35% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          17
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     267.42 ms (0.00% GC)
+  median time:      305.71 ms (0.00% GC)
+  mean time:        302.65 ms (0.18% GC)
+  maximum time:     342.52 ms (0.22% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          22
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  16.80 mb
+  allocs estimate:  3
+  minimum time:     206.30 ms (0.00% GC)
+  median time:      237.40 ms (0.19% GC)
+  mean time:        233.19 ms (0.25% GC)
+  maximum time:     252.50 ms (0.62% GC)
+
+↑log10 benchmark ↑ 
+log10--------------------------
+
+log1p--------------------------
+↓log1p benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          124
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     36.58 ms (0.00% GC)
+  median time:      40.10 ms (1.02% GC)
+  mean time:        40.60 ms (1.13% GC)
+  maximum time:     45.25 ms (2.16% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          39
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     115.58 ms (0.00% GC)
+  median time:      128.54 ms (0.00% GC)
+  mean time:        130.02 ms (0.31% GC)
+  maximum time:     144.84 ms (0.57% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          31
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     147.55 ms (0.00% GC)
+  median time:      165.93 ms (0.00% GC)
+  mean time:        162.49 ms (0.25% GC)
+  maximum time:     173.92 ms (0.47% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          34
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     132.63 ms (0.59% GC)
+  median time:      155.83 ms (0.24% GC)
+  mean time:        150.14 ms (0.26% GC)
+  maximum time:     163.53 ms (0.48% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          21
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     217.62 ms (0.00% GC)
+  median time:      238.69 ms (0.00% GC)
+  mean time:        241.34 ms (0.15% GC)
+  maximum time:     263.02 ms (0.30% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          28
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  15.26 mb
+  allocs estimate:  3
+  minimum time:     160.96 ms (0.00% GC)
+  median time:      180.30 ms (0.24% GC)
+  mean time:        179.03 ms (0.30% GC)
+  maximum time:     195.03 ms (0.57% GC)
+
+↑log1p benchmark ↑ 
+log1p--------------------------
+
+sin--------------------------
+↓sin benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          5
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     1.07 s (0.12% GC)
+  median time:      1.13 s (0.13% GC)
+  mean time:        1.12 s (0.13% GC)
+  maximum time:     1.15 s (0.20% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          35
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     128.60 ms (1.12% GC)
+  median time:      144.83 ms (0.96% GC)
+  mean time:        144.46 ms (0.96% GC)
+  maximum time:     166.63 ms (1.11% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          26
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     177.18 ms (0.81% GC)
+  median time:      199.62 ms (0.66% GC)
+  mean time:        194.72 ms (0.67% GC)
+  maximum time:     208.20 ms (0.68% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          33
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     138.43 ms (0.99% GC)
+  median time:      155.67 ms (0.85% GC)
+  mean time:        155.62 ms (0.86% GC)
+  maximum time:     170.93 ms (0.77% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          12
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     383.34 ms (0.29% GC)
+  median time:      449.68 ms (0.33% GC)
+  mean time:        438.29 ms (0.31% GC)
+  maximum time:     474.13 ms (0.09% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          16
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     280.24 ms (0.15% GC)
+  median time:      320.90 ms (0.46% GC)
+  mean time:        316.93 ms (0.47% GC)
+  maximum time:     358.92 ms (0.54% GC)
+
+↑sin benchmark ↑ 
+sin--------------------------
+
+sinh--------------------------
+↓sinh benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          2
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     4.41 s (0.74% GC)
+  median time:      4.48 s (2.12% GC)
+  mean time:        4.48 s (2.12% GC)
+  maximum time:     4.56 s (3.46% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          2
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     3.81 s (0.72% GC)
+  median time:      3.82 s (2.56% GC)
+  mean time:        3.82 s (2.56% GC)
+  maximum time:     3.82 s (4.39% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          1
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     7.44 s (0.33% GC)
+  median time:      7.44 s (0.33% GC)
+  mean time:        7.44 s (0.33% GC)
+  maximum time:     7.44 s (0.33% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          2
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     4.17 s (0.66% GC)
+  median time:      4.32 s (2.64% GC)
+  mean time:        4.32 s (2.64% GC)
+  maximum time:     4.46 s (4.48% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          1
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     6.58 s (0.41% GC)
+  median time:      6.58 s (0.41% GC)
+  mean time:        6.58 s (0.41% GC)
+  maximum time:     6.58 s (0.41% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          1
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     5.23 s (0.53% GC)
+  median time:      5.23 s (0.53% GC)
+  mean time:        5.23 s (0.53% GC)
+  maximum time:     5.23 s (0.53% GC)
+
+↑sinh benchmark ↑ 
+sinh--------------------------
+
+tan--------------------------
+↓tan benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          4
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     1.22 s (0.11% GC)
+  median time:      1.27 s (0.12% GC)
+  mean time:        1.27 s (0.10% GC)
+  maximum time:     1.32 s (0.12% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          22
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     214.09 ms (0.54% GC)
+  median time:      232.70 ms (0.63% GC)
+  mean time:        234.94 ms (0.62% GC)
+  maximum time:     259.52 ms (0.58% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          12
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     414.40 ms (0.36% GC)
+  median time:      440.91 ms (0.30% GC)
+  mean time:        443.42 ms (0.30% GC)
+  maximum time:     473.12 ms (0.26% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          20
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     228.74 ms (0.61% GC)
+  median time:      260.42 ms (0.54% GC)
+  mean time:        258.30 ms (0.52% GC)
+  maximum time:     282.86 ms (0.51% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          8
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     629.76 ms (0.22% GC)
+  median time:      666.27 ms (0.21% GC)
+  mean time:        663.23 ms (0.22% GC)
+  maximum time:     707.25 ms (0.31% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          12
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  48.82 mb
+  allocs estimate:  3
+  minimum time:     415.98 ms (0.38% GC)
+  median time:      451.00 ms (0.34% GC)
+  mean time:        450.39 ms (0.31% GC)
+  maximum time:     488.59 ms (0.34% GC)
+
+↑tan benchmark ↑ 
+tan--------------------------
+
+tanh--------------------------
+↓tanh benchmark ↓
+
+details Base
+BenchmarkTools.Trial: 
+  samples:          2
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     4.35 s (0.72% GC)
+  median time:      4.43 s (2.10% GC)
+  mean time:        4.43 s (2.10% GC)
+  maximum time:     4.51 s (3.43% GC)
+details Libm
+BenchmarkTools.Trial: 
+  samples:          2
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     4.92 s (0.55% GC)
+  median time:      5.04 s (1.76% GC)
+  mean time:        5.04 s (1.76% GC)
+  maximum time:     5.16 s (2.92% GC)
+details SLEEF_purec
+BenchmarkTools.Trial: 
+  samples:          1
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     8.71 s (0.31% GC)
+  median time:      8.71 s (0.31% GC)
+  mean time:        8.71 s (0.31% GC)
+  maximum time:     8.71 s (0.31% GC)
+details SLEEF_sse2
+BenchmarkTools.Trial: 
+  samples:          1
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     5.58 s (0.45% GC)
+  median time:      5.58 s (0.45% GC)
+  mean time:        5.58 s (0.45% GC)
+  maximum time:     5.58 s (0.45% GC)
+details SLEEF_avx
+BenchmarkTools.Trial: 
+  samples:          1
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     7.72 s (0.34% GC)
+  median time:      7.72 s (0.34% GC)
+  mean time:        7.72 s (0.34% GC)
+  maximum time:     7.72 s (0.34% GC)
+details SLEEF_fma4
+BenchmarkTools.Trial: 
+  samples:          1
+  evals/sample:     1
+  time tolerance:   5.00%
+  memory tolerance: 1.00%
+  memory estimate:  381.47 mb
+  allocs estimate:  3
+  minimum time:     6.03 s (0.50% GC)
+  median time:      6.03 s (0.50% GC)
+  mean time:        6.03 s (0.50% GC)
+  maximum time:     6.03 s (0.50% GC)
+
+↑tanh benchmark ↑ 
+tanh--------------------------

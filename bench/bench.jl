@@ -90,7 +90,7 @@ results = run(suite; verbose=VERBOSE)
 for f in sort(collect(keys(micros)))
     println()
 
-    print_with_color(:magenta, string(f, "--------------------------\n"))  
+    print_with_color(:magenta, string(f, "\n--------------------------\n"))  
     print_with_color(:magenta, string("↓", f, " benchmark ↓\n"))
 	#print_with_color(:blue, "median ratio Sleef/Base\n")
     #println(ratio(median(results["Sleef"][f]), median(results["Base"][f])))
@@ -104,7 +104,7 @@ for f in sort(collect(keys(micros)))
     end
 
     print_with_color(:magenta, string("↑"f, " benchmark ↑ \n"))
-    print_with_color(:magenta, string(f, "--------------------------\n"))
+    print_with_color(:magenta, string(f, "\n--------------------------\n"))
 end
 
 #for f in sort(collect(keys(micros_u1)))
