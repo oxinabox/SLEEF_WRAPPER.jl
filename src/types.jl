@@ -2,40 +2,39 @@
 # ccall will call the Conversions we have defined
 # TODO: I am dubious about all of this; check it all.
 
-using Base.@pure
 using Base.Cartesian.@ntuple
 
-@inline vinit8{T}(x::T) = Base.Cartesian.@ntuple 8 k->k==1 ? x : zero(T)
-@inline vinit4{T}(x::T) = Base.Cartesian.@ntuple 4 k->k==1 ? x : zero(T)
-@inline vinit2{T}(x::T) = Base.Cartesian.@ntuple 2 k->k==1 ? x : zero(T)
+@inline vinit8{T}(x::T) = @ntuple 8 k->k==1 ? VecElement{T}(x) : VecElement{T}(zero(T))
+@inline vinit4{T}(x::T) = @ntuple 4 k->k==1 ? VecElement{T}(x) : VecElement{T}(zero(T))
+@inline vinit2{T}(x::T) = @ntuple 2 k->k==1 ? VecElement{T}(x) : VecElement{T}(zero(T))
 
 ##Float64
 typealias __m256d NTuple{4, VecElement{Float64}}
-@pure Base.convert(::Type{__m256d}, x::Float64) = __m256d(vinit4(x))
-@pure Base.convert(::Type{Float64}, x::__m256d) = first(x).value
+@inline Base.convert(::Type{__m256d}, x::Float64) = __m256d(vinit4(x))
+@inline Base.convert(::Type{Float64}, x::__m256d) = first(x).value
 
 typealias __m128d NTuple{2, VecElement{Float64}}
-@pure Base.convert(::Type{__m128d}, x::Float64) = __m128d(vinit2(x))
-@pure Base.convert(::Type{Float64}, x::__m128d) = first(x).value
+@inline Base.convert(::Type{__m128d}, x::Float64) = __m128d(vinit2(x))
+@inline Base.convert(::Type{Float64}, x::__m128d) = first(x).value
 
 ##Float32
 typealias __m256 NTuple{8, VecElement{Float32}}
-@pure Base.convert(::Type{__m256}, x::Float32) = __m256(vinit8(x))
-@pure Base.convert(::Type{Float32}, x::__m256) = first(x).value
+@inline Base.convert(::Type{__m256}, x::Float32) = __m256(vinit8(x))
+@inline Base.convert(::Type{Float32}, x::__m256) = first(x).value
 
 
 typealias __m128 NTuple{4, VecElement{Float32}}
-@pure Base.convert(::Type{__m128}, x::Float32) = __m128(vinit4(x))
-@pure Base.convert(::Type{Float32}, x::__m128) = first(x).value
+@inline Base.convert(::Type{__m128}, x::Float32) = __m128(vinit4(x))
+@inline Base.convert(::Type{Float32}, x::__m128) = first(x).value
 
 ##Int32
 typealias __m256i NTuple{8, VecElement{Int32}}
-@pure Base.convert(::Type{__m256i}, x::Int32) = __m256i(vinit8(x))
-@pure Base.convert(::Type{Int32}, x::__m256i) = first(x).value
+@inline Base.convert(::Type{__m256i}, x::Int32) = __m256i(vinit8(x))
+@inline Base.convert(::Type{Int32}, x::__m256i) = first(x).value
 
 typealias __m128i NTuple{4, VecElement{Int32}}
-@pure Base.convert(::Type{__m128i}, x::Int32) = __m128i(vinit4(x))
-@pure Base.convert(::Type{Int32}, x::__m128i) = first(x).value
+@inline Base.convert(::Type{__m128i}, x::Int32) = __m128i(vinit4(x))
+@inline Base.convert(::Type{Int32}, x::__m128i) = first(x).value
 
 
 
