@@ -28,6 +28,8 @@ During the build process, we attempt to detect your processor's support for the 
 You can override the SIMD instruction set selection by setting the enviroment variable `JLSLEEF_ARCH` to one of the instruction sets (or `purec` above), and rebuilding. Either by running `deps/rebuild.jl` or by reinstalling the package. This enviroment variable only needs to be set during the build process.
 
 
+It does not currently build for windows. It should be fairly easy to make it build for window, raise an Issue if you actually want to use this on windows, and I'll see what I can do.
+
 Functions named are prefixed with an `x`, vs usual libm names.
 Using multiple dispatch, Float32, and Float64 functions share the same names.
 
