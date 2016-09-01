@@ -1,67 +1,122 @@
-using SLEEF
-#using Libm
+using JLD
 using BenchmarkTools
+RETUNE = false
+VERBOSE = false
+DETAILS = true
 
-#const suite = BenchmarkGroup(["Libm"])
-const suite = BenchmarkGroup(["SLEEF"])
+import Libm
 
-srand(100)
+push!(LOAD_PATH, "./arch_modules")
+import SLEEF_purec
+import SLEEF_sse2
+import SLEEF_avx
+#import SLEEF_avx2
+import SLEEF_fma4
 
-x1 = linspace(708.4, 709.7, 10000)
-x2 = -linspace(708.4, 709.7, 10000)
-x3 = linspace(0.5*log(2),1.5*log(2), 10000)
-x4 = -linspace(0.5*log(2),1.5*log(2), 10000)
-x5 = linspace(1.5*log(2),10, 10000)
-x6 = -linspace(1.5*log(2),10, 10000)
-x7 = linspace(2.0^-28,2.0^-27, 10000)
-x8 = -linspace(2.0^-28,2.0^-27, 10000)
-x9 = linspace(1.0, 10.0, 1000)
-x10 = -linspace(1.0, 10.0, 1000)
-x11 = 40000*(rand(2_000_000)-0.5)
-xx_exp = union(x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11)
-xx_sm = logspace(-16,0,2_000_000)
-xx_log = 4000*rand(2_000_000)
-xx_trig = linspace(-100, 100, 50_000_000)
+const bench = ("Base","Libm",
+				"SLEEF_purec",
+				"SLEEF_sse2",
+				"SLEEF_avx",
+#				"SLEEF_avx2",
+				"SLEEF_fma4"
+)
+const suite = BenchmarkGroup()
+for mod in bench
+    suite[mod] = BenchmarkGroup([mod])
+end
+
+xx_sml = logspace(-16,0,2_000_000)
+xx_exp = vcat(-20:0.00005:20, -1000:0.1:1000)
+xx_log = vcat(0.00001:0.00001:20, 0.0001:0.1:20_000, 2.0.^(-1000:1000))
+xx_trig =  vcat(-10:0.0000125:10, -40:0.00005:40, -40_000_000:25.0125:40_000_000)
 xx_hyp = linspace(-15, 15, 50_000_000)
+xx_cbrt = vcat(-10000:0.2:10000, 2.1.^(-1000:1000))
 
 const micros = Dict(
     "exp"   => xx_exp,
     "exp2"  => xx_exp,
     "exp10" => xx_exp,
-    "expm1" => xx_sm,
+    "expm1" => xx_sml,
     "log"   => xx_log,
     "log10" => xx_log,
-    "log1p" => xx_sm,
+    "log1p" => xx_sml,
     "sin"   => xx_trig,
     "cos"   => xx_trig,
     "tan"   => xx_trig,
+    "cbrt"  => xx_cbrt,
     "sinh"  => xx_hyp,
     "cosh"  => xx_hyp,
     "tanh"  => xx_hyp
-    )
+   )
 
-for (f,v) in micros
-    suite[string(f)] = BenchmarkGroup([string(f)])
-    sleeff = Symbol("x",f)
-    basef = Symbol(f)
-    #suite[f]["Libm"] = @benchmarkable $libmf.($v)
-    suite[f]["SLEEF"] = @benchmarkable $sleeff.($v)
-	suite[f]["Base"] = @benchmarkable $basef.($v)
+
+#const micros_u1 = Dict(
+#    "log"   => xx_log,
+#    "sin"   => xx_trig,
+#    "cos"   => xx_trig,
+#    "tan"   => xx_trig,
+#    "cbrt"  => xx_cbrt
+#    )
+
+for mod in bench
+    for (f,v) in micros
+        suite[mod][f] = BenchmarkGroup([f])
+        mod != "Base" ? fun = Symbol("x",f) : fun = Symbol(f)
+		modsym = Symbol(mod)
+        suite[mod][f] = @benchmarkable $modsym.$fun.($v)
+    end
 end
+#for (f,v) in micros_u1
+#    suite["Sleef_u1"][f] = BenchmarkGroup([f])
+#    fun = Symbol("x",f,"_u1")
+#    suite["Sleef_u1"][f] = @benchmarkable $fun.($v)
+#end
 
-tune!(suite)
-result = run(suite)
+#paramf = joinpath("./", "bench", "params.jld") #fixme
+#if !isfile(paramf) || RETUNE
+    tune!(suite; verbose=VERBOSE)
+#    save(paramf, "suite", params(suite))
+#    println("Saving tuned parameters.")
+#else
+#    println("Loading pretuned parameters.")
+#    loadparams!(suite, load(paramf, "suite"), :evals, :samples)
+#end
+
+println("Warming up...")
+warmup(suite)
+println("Running micro benchmarks...")
+results = run(suite; verbose=VERBOSE)
 
 for f in sort(collect(keys(micros)))
     println()
-    print_with_color(:magenta, string(f, " benchmark\n"))
-    print_with_color(:blue, "median ratio SLEEF/Base\n")
-    #print_with_color(:blue, "median ratio Libm/Base\n")
-    println(ratio(median(result[f]["SLEEF"]), median(result[f]["Base"])))
-    #println(ratio(median(result[f]["Libm"]), median(result[f]["Base"])))
+
+    print_with_color(:magenta, string("--------------------------\n"))  
+    print_with_color(:magenta, string("↓", f, " benchmark ↓\n"))
+	#print_with_color(:blue, "median ratio Sleef/Base\n")
+    #println(ratio(median(results["Sleef"][f]), median(results["Base"][f])))
     println()
-    print_with_color(:blue, "details Libm/Base\n")
-    println(result[f]["SLEEF"])
-    println(result[f]["Base"])
-    println()
+    if DETAILS
+		for mod in bench
+			print_with_color(:blue, "details $mod\n")
+			println(results[mod][f])
+		end
+		println()
+    end
+
+    print_with_color(:magenta, string("↑"f, " benchmark ↑ \n"))
+    print_with_color(:magenta, string("--------------------------\n"))
 end
+
+#for f in sort(collect(keys(micros_u1)))
+#    println()
+#    print_with_color(:magenta, string(f, " benchmark\n"))
+#    print_with_color(:blue, "median ratio Sleef_u1/Base\n")
+#    println(ratio(median(results["Sleef_u1"][f]), median(results["Base"][f])))
+#    println()
+#    if DETAILS
+#        print_with_color(:blue, "details Sleef_u1/Base\n")
+#        println(results["Sleef_u1"][f])
+#        println(results["Base"][f])
+#        println()
+#    end
+#end

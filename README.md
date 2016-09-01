@@ -14,7 +14,19 @@ This is a julia binding for  Naoki Shibata's [SLEEF](https://github.com/shibatch
 > are implemented. The algorithm is intentended for efficient evaluation
 > utilizing SIMD instruction sets ...
 
-Right now it is only set up to compile for SSE2; it is probably not too hard to tweak it to do all the other SIMD archetectures that SLEEF supports.
+Right now the following instruction sets are supported: 
+
+ - `sse2`
+ - `avx`
+ - `avx2`
+ - `fma4`
+ - and the fall back to `purec`
+
+ARM `neon` is not currently supported.
+
+During the build process, we attempt to detect your processor's support for the various SIMD instruction sets, and enable the most powerful it supports. There may be some bugs with this, I am no SIMD expert. Please make a bug report with any issues found.
+You can override the SIMD instruction set selection by setting the enviroment variable `JLSLEEF_ARCH` to one of the instruction sets (or `purec` above), and rebuilding. Either by running `deps/rebuild.jl` or by reinstalling the package. This enviroment variable only needs to be set during the build process.
+
 
 Functions named are prefixed with an `x`, vs usual libm names.
 Using multiple dispatch, Float32, and Float64 functions share the same names.
