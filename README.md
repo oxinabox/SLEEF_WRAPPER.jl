@@ -41,8 +41,11 @@ Functions without this varientent form (eg `xexp`) are already accurace to withi
 
 # See Also
 
- - Fine work happening at [Libm.jl](https://github.com/JuliaMath/Libm.jl)
-	- [MUSM's PR for a pure julia sleef port](https://github.com/JuliaMath/Libm.jl/pull/11)
+ - Fine work happening on various julia LibM efforts
+   - https://github.com/musm/Sleef.jl musm's pure julia port of SLEEF -- it is faster than this library, and it doesn't even have hand coded SIMD!
+   - https://github.com/musm/Amal.jl musm's WIP for a new libM
+   - https://github.com/JuliaMath/Libm.jl/
+
  - [SLEEF](https://github.com/shibatch/sleef)
  - [Future of OpenLibm in julia (Julia Issue #18102)](https://github.com/JuliaLang/julia/issues/18102)
  - [Yeppp.jl](https://github.com/JuliaMath/Yeppp.jl): Julia bindings for Yeppp!: another SIMD math library. Whereas SLEEF optimises math operations over scalars using SIMD; Yeppp! optimises math operations over vectors -- which honestly makes a lot more sense given what SIMD stands for. 
